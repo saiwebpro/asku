@@ -6,7 +6,6 @@ import { Configuration, OpenAIApi } from 'openai';
 dotenv.config();
 
 const configuration = new Configuration({
-    organization: "org-nLMJWKJMcehqaB6m2netdDMj",
     apiKey: process.env.OPENAI_API_KEY,
 });
 
@@ -45,4 +44,4 @@ app.post('/', async (req, res) => {
     }
 })
 
-app.listen(5000, () => console.log('Server is running on port http://localhost:5000'));
+app.listen(5000, () => console.log('Server is running on port https://ask4u.vercel.app/'));
